@@ -54,19 +54,20 @@ aside img {
 }
 
 aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
+    position: static;
+    margin-bottom: 0.5rem;
 }
 
 main img {
     width: 150px;
-    height: auto;
+    height: 150px;
     border: 1px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
     float: right;
     margin: 0 0 1rem 1rem;
+    object-fit: cover;
+    z-index: 1;
 }
 
 img {
@@ -112,7 +113,8 @@ footer {
 
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 20rem 1fr;
+    align-items: start;
 }
 
 main {
