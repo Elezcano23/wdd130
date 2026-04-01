@@ -242,3 +242,80 @@ footer p {
 .socialmedia img:hover {
     opacity: 0.75;
 }
+
+/* CONTACT PAGE */
+
+.company-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* MAP */
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    /* reemplaza el style="border:0" */
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.checkbox {
+    font-size: 0.85rem;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* EMPLOYEES */
+.employees {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.employee-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
