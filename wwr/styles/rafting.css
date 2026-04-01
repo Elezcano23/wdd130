@@ -28,7 +28,7 @@ body {
 }
 
 /* ============================================
-   LAYOUT WRAPPER — centra todo en 840px
+   LAYOUT WRAPPER 
    ============================================ */
 header,
 main,
@@ -38,7 +38,7 @@ footer {
 }
 
 /* ============================================
-   TIPOGRAFÍA GLOBAL
+    GLOBAL TYPOGRAFY
    ============================================ */
 h1,
 h2 {
@@ -62,7 +62,7 @@ header img {
     height: auto;
 }
 
-/* --- Nav dentro del header --- */
+/* --- Nav in header --- */
 header nav {
     display: flex;
     justify-content: space-around;
@@ -90,7 +90,6 @@ header nav a:hover {
     margin-bottom: 16px;
 }
 
-/* Imagen de fondo full-width */
 .hero > img {
     display: block;
     width: 100%;
@@ -98,7 +97,6 @@ header nav a:hover {
     object-fit: cover;
 }
 
-/* Título absoluto sobre la imagen */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -108,7 +106,6 @@ header nav a:hover {
     text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Article absoluto sobre la imagen (esquina inferior izquierda) */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -120,7 +117,6 @@ header nav a:hover {
     line-height: 1.6;
 }
 
-/* Imagen dentro del article flota a la derecha */
 .hero article img {
     float: right;
     width: 125px;
@@ -221,7 +217,6 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* --- Nav de redes sociales --- */
 .socialmedia {
     display: flex;
     gap: 12px;
@@ -262,7 +257,6 @@ footer p {
     width: 100%;
     height: 300px;
     border: none;
-    /* reemplaza el style="border:0" */
 }
 
 /* FORM */

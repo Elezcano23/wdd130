@@ -62,29 +62,18 @@
                 <fieldset>
                     <legend>Message Purpose</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" checked>
-                        General Inquiry
-                    </label>
+                    <input type="radio" id="general" name="purpose" value="general" checked>
+                    <label for="general">General Inquiry</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
                 </fieldset>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
                 <button type="submit">Send Message</button>
 
