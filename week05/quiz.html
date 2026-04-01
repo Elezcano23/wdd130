@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+</head>
+
+<body>
+
+    <div class="quiz-wrapper">
+        <h1><span class="checkmark">&#10003;</span> Basic HTML and CSS Quiz</h1>
+
+        <form action="#" method="post" class="quiz-form">
+
+            <!-- Q1: text input -->
+            <div class="form-group">
+                <label for="q1"><span class="q-num">1.</span> What does the acronym CSS stand
+                    for?</label>
+                <input type="text" id="q1" name="q1" placeholder="Your answer…" />
+            </div>
+
+            <!-- Q2: textarea -->
+            <div class="form-group">
+                <label for="q2"><span class="q-num">2.</span> How are id and class attributes
+                    selected in CSS?</label>
+                <textarea id="q2" name="q2" rows="5" placeholder="Your answer…"></textarea>
+            </div>
+
+            <!-- Q3: select -->
+            <div class="form-group">
+                <label for="q3"><span class="q-num">3.</span> Which of the following is a valid CSS
+                    comment?</label>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="a">// This is a comment</option>
+                    <option value="b">/* This is a comment */</option>
+                    <option value="c">&lt;!-- This is a comment --&gt;</option>
+                </select>
+            </div>
+
+            <!-- Q4: number input with code snippet -->
+            <div class="form-group">
+                <label for="q4"><span class="q-num">4.</span> What is the bottom margin given this
+                    declaration?</label>
+                <pre class="code-block"><code>margin: 10px 5px 15px;</code></pre>
+                <input type="number" id="q4" name="q4" placeholder="Enter a number…" />
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Quiz</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
