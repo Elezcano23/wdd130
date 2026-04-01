@@ -1,0 +1,37 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+    min-width: 400px;
+}
+
+th,
+td {
+    border: 1px solid rgb(150 150 150);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+thead tr,
+tfoot tr {
+    background-color: rgb(0 0 0);
+    color: white;
+    font-weight: 700;
+}
+
+/* Alternating row colors for tbody */
+tbody tr:nth-child(even) {
+    background-color: rgb(230 230 230);
+}
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: rgb(200 220 255);
+}
+
+/* League header cells in tbody */
+tbody th {
+    background-color: rgb(60 60 60);
+    color: white;
+}
