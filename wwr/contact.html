@@ -33,10 +33,10 @@
         <!-- COMPANY INFO -->
         <section class="company-info">
             <h1>White Water Rafting Company</h1>
-            <p>Malleo 343</p>
-            <p>Junin de los andes, Neuquén</p>
-            <p>+1 999 999 9999</p>
-            <p>info@whitewater.com</p>
+            <p class="info-text">Malleo 343</p>
+            <p class="info-text">Junin de los andes, Neuquén</p>
+            <p class="info-text">+1 999 999 9999</p>
+            <p class="info-text">info@whitewater.com</p>
         </section>
 
         <!-- MAP + FORM -->
@@ -44,13 +44,14 @@
 
             <!-- GOOGLE MAP -->
             <div class="map">
+                <!-- inline style removed — border handled via .map-iframe in rafting.css -->
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14552.549187607168!2d-71.07336351379575!3d-39.93475453641334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96119b0036621b35%3A0x469e38cb4a747a17!2sLANIN%20punto%20de%20encuentro%20Rafting!5e0!3m2!1ses!2sar!4v1775066811585!5m2!1ses!2sar"
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  width="600" height="450" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" class="map-iframe"></iframe>
             </div>
 
-            <!-- FORM -->
+            <!-- CONTACT FORM -->
             <form class="contact-form">
 
                 <label for="name">Full Name</label>
@@ -71,6 +72,11 @@
                     <input type="radio" id="suggestion" name="purpose" value="suggestion">
                     <label for="suggestion">Website Suggestion</label>
                 </fieldset>
+
+                <!-- textarea added to meet audit requirement -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"
+                  placeholder="Write your message here..."></textarea>
 
                 <input type="checkbox" id="subscribe" name="subscribe">
                 <label for="subscribe">Please subscribe me to the monthly newsletter</label>
@@ -108,7 +114,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>©2026 🛶 Whitewater Rafting company | Ezequiel Lezcano </p>
+        <p>©2026 🛶 Whitewater Rafting company | Ezequiel Lezcano</p>
 
         <nav class="socialmedia">
             <a href="https://facebook.com">
